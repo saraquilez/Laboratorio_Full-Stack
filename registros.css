@@ -1,0 +1,97 @@
+/* SARA QUÍLEZ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/wallpaper.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+  
+.consulta {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+h2 {
+  font-size: 24px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(53, 147, 255, 0.317);
+  margin-bottom: 20px;
+}
+  
+.boton {
+  background-color: #3f7698;
+  width: 200px;
+  margin: 20px;
+  color: #fff;
+  border-color: rgba(16, 16, 16, 0.059);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #4f7c3a;
+  transform: translateY(-2px);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.existe_container {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #ffcccc;
+  border: 1px solid #ff3333;
+}
+
+.existe_title {
+  font-weight: bold;
+  font-size: 28px;
+  color: #ff3333;
+}
+
+.existe_campo {
+  color: #ff3333;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}

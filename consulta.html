@@ -1,0 +1,43 @@
+<!-- SARA QUÍLEZ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Consulta Registros</title>
+    <link rel="stylesheet" type="text/css" href="registros.css">
+    
+</head>
+
+<body>
+    <div class="consulta">
+        <h2>¡Registro completado con éxito!</h2>
+        <div id="tabla_registros"></div>
+
+        <div>
+            <button class="boton" onclick="window.open(window.location.href.replace('consulta.html', 'index.html'))">Crear otra cuenta</button>
+            <button class="boton" id="btn-consultar">Consultar registros</button>
+
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("btn-consultar").addEventListener("click", function() {
+            // Realizar una solicitud AJAX al archivo PHP
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "datos.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Mostrar los resultados en el div de resultados
+                    document.getElementById("resultado").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</body>
+
+</html>
